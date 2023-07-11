@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--BU DOSYADA HATA ALIYORUM VALIDATORA YÜKLEYİNCE AMA NOTLARIMI YAZDIM. DİĞER GETTING STARTED OLAN ÇALIŞIYOR -->
+
+ <!-- Error: Start tag seen without seeing a doctype first. Expected <!DOCTYPE html>.
+we need this DOCTYPE in every html file-->
+
+<html lang="en">
+    <!--we add lang attribute after checking our file in w3 validator 
+    - https://validator.w3.org/nu/#file , 
+    Warning: Consider adding a lang attribute to the html start tag to declare the language of this document.-->
+
+   
+
+    <head>
+        <!-- we write meta data in the head element-->
+        
+        <!--Error: The character encoding was not declared.
+             Proceeding using windows-1252. 
+            The W3C validator reluctantly accepts the document as valid with just a few warnings 
+            when it is pasted into the direct input form, 
+            but when the document is uploaded or loaded by URI, validation fails with this error message
+        if you are using the File Upload option, it depends on which encoding the HTML file was saved with.
+        if you are using the Direct Input option, it depends on the navigator.
+        If you don't want the validator to guess, and use UTF-8, you can add the following line
+
+        <meta charset="UTF-8"> inside the the head element. -->
+
+        <meta charset="UTF-8">
+
+        
+        <title>My First Web Page </title>
+        <style>
+            /* this part we put a quick css part in the style element*/
+            html {
+                font-size: 22px
+            }
+
+            body {
+                background-color: #333;
+                color: whitesmoke;
+            }
+       </style>
+    </head>
+
+    <body>
+        <!-- everybody sees the body in the browser-->
+        <h1>Hello World :) </h1>
+        <p>This is my first web page.</p>
+    </body>
+
+</html>
